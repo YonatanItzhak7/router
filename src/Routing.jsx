@@ -1,18 +1,26 @@
-import {Header,Main,Footer} from './components/pages/index'
+import {
+  Home,
+  About,
+  ContactUs,
+  Devices,
+  Movies,
+} from "./components/pages/index";
 
-function Routing({root}) {
+function Routing({ root }) {
   switch (root) {
-    case "Header":
-      return <Header/>
-      case "Main":
-      return <Main/>
-      case "Footer":
-        return <Footer/>
+    case "Home":
+      return <Home />;
+    case "About":
+      return <About />;
+    case "ContactUs":
+      return <ContactUs />;
+    case "Devices":
+      return <Devices />;
+    case "Movies":
+      return <Movies />;
     default:
       break;
   }
-};
+}
 
 export default Routing;
-
-

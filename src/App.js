@@ -1,18 +1,21 @@
 import "./App.css";
 import { useState } from "react";
 import { Link, BrowserRouter } from "react-router-dom";
-import  Router  from "./Router";
+import Router from "./Router";
+import Footer from "./components/featurs/Footer/Footer";
+import Header from "./components/featurs/Header/Header";
+import Navbar from "./components/featurs/Navbar/Navbar";
 
-const pages = ["Header", "Main", "Footer"];
+const pages = ["Home", "About", "ContactUs", "PageNotFound"];
 function App() {
-  const [numPage, setNumPage] = useState("Header");
+  const [numPage, setNumPage] = useState("Home");
   return (
     <div className="App">
       <BrowserRouter>
-        {pages.map((pagePath) => (
-          <Link to={pagePath}>{pagePath}</Link>
-        ))}
+        <Navbar />
+        <Header />
         <Router />
+        <Footer />
       </BrowserRouter>
     </div>
   );

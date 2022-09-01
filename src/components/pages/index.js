@@ -1,9 +1,11 @@
-import Footer from './Footer/Footer'
-import Header from './Header/Header'
-import Main from './Main/Main'
+import About from './About/About'
+import Home from './Home/Home'
+import ContactUs from './ContactUs/ContactUs'
 import Routing from '../../Routing'
-
+import PageNotFound from './Not-found-page/Not-found-page'
+import Devices from './Devicespage'
+import Movies from './Movies/Movies'
 
 export{
-  Footer,Header,Main,Routing
+  Home,About,ContactUs,Routing,PageNotFound,Devices,Movies
 }
